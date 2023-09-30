@@ -17,8 +17,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun customiseSeekbar() {
-        /*binding.slider1.setTickCount(2)
-        binding.slider2.setTickCount(4)
-        binding.slider2.setThumbIndex(2)*/
+        binding.slider1.setTickCount(4)
+        binding.slider2.setTickCount(3)
+        binding.slider3.setTickCount(1)
+        binding.slider4.setTickCount(2)
+        binding.slider5.setTickCount(5)
+
+        binding.slider5.setThumbIndex(4)
     }
 }
