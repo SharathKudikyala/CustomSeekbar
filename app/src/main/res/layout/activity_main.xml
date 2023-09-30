@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black">
+
+    <!--<com.app.customseekbar.custom.CustomSlider
+        android:id="@+id/slider1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:tag="CustomSlider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+        <com.app.customseekbar.custom.CustomSlider
+            android:id="@+id/slider1"
+            android:layout_width="150dp"
+            android:layout_height="350dp"
+            android:tag="CustomSlider"
+            app:tickCount="4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/slider2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.app.customseekbar.custom.CustomSlider
+            android:id="@+id/slider2"
+            android:layout_width="150dp"
+            android:layout_height="350dp"
+            android:tag="CustomSlider"
+            app:tickCount="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/slider3"
+            app:layout_constraintStart_toEndOf="@id/slider1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.app.customseekbar.custom.CustomSlider
+            android:id="@+id/slider3"
+            android:layout_width="150dp"
+            android:layout_height="350dp"
+            android:tag="CustomSlider"
+            app:tickCount="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/slider4"
+            app:layout_constraintStart_toEndOf="@id/slider2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.app.customseekbar.custom.CustomSlider
+            android:id="@+id/slider4"
+            android:layout_width="150dp"
+            android:layout_height="350dp"
+            android:tag="CustomSlider"
+            app:tickCount="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/slider5"
+            app:layout_constraintStart_toEndOf="@id/slider3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <com.app.customseekbar.custom.CustomSlider
+            android:id="@+id/slider5"
+            android:layout_width="150dp"
+            android:layout_height="350dp"
+            android:tag="CustomSlider"
+            app:tickCount="5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/slider4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
